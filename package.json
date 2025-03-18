@@ -7,7 +7,7 @@
         "dev": "vite",
         "format": "prettier --write resources/",
         "format:check": "prettier --check resources/",
-        "lint": "eslint . --fix",
+        "lint": "eslint . --fix --ignore-pattern 'resources/js/ziggy.js'",
         "types": "tsc --noEmit"
     },
     "devDependencies": {
