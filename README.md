@@ -46,7 +46,7 @@ Now You can visit
 
 ## Code Guidlince
 
-1. Lint backend with pint using `sail artisan lint`
+1. Lint backend with pint using `sail pint`
 2. Linf frontend with eslint using `sail npm run lint`
 3. Run tests with `sail test`
 4. Controller should be either a resource or a action controller
