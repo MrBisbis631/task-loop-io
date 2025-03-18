@@ -18,6 +18,18 @@ Install the php dependencies:
 composer install
 ```
 
+Copy the .env.example file to .env:
+
+```bash
+cp .env.example .env
+```
+
+Generate the app key:
+
+```bash
+sail artisan key:generate
+```
+
 Run migrations:
 
 ```bash
