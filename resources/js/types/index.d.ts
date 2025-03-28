@@ -40,3 +40,25 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export interface PaginationLinks {
+    url: string | null;
+    label: string;
+    active: boolean;
+}
+
+export interface LaravelPaginator<T = unknown> {
+    data: T[];
+    current_page: number;
+    from: number | null;
+    to: number | null;
+    per_page: number;
+    total: number;
+    last_page: number;
+    next_page_url: string | null;
+    prev_page_url: string | null;
+    first_page_url: string;
+    last_page_url: string;
+    path: string;
+    links: PaginationLinks[];
+}
